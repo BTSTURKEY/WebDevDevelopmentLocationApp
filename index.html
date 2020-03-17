@@ -1,6 +1,35 @@
 <html>
 
+<body>
 
+  <h1> Light switch control </h1>
 
+  <label>Controls:</label>
+  <br><br>
+  <button type="activate" onclick="lightOn(); alertOn()">Light on</button>
+  <br><br>
+  <button type="deactivate" onclick="lightOff(); alertOff()">Light off</button>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script>
+    function lightOn() {
+      $.post("https://maker.ifttt.com/trigger/location_true/with/key/dOM-7jVPDkYfF6l1pPedWv");
+    }
+
+    function alertOn() {
+      alert('Light switch turned on!');
+    }
+
+    function lightOff() {
+      $.post("https://maker.ifttt.com/trigger/location_false/with/key/dOM-7jVPDkYfF6l1pPedWv");
+    }
+
+    function alertOff() {
+      alert('light switch turned off');
+    }
+  </script>
+
+</body>
 
 </html>
