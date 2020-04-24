@@ -7,7 +7,7 @@
   "deleteLocal": false,
   "hostname": "web.thomasfranklin.co.uk",
   "port": "911",
-  "target": "/volumes/local/www/turkltd-co-uk/root",
+  "target": "/volumes/local/www/turkltd-co-uk/nodejs",
   "ignore": [
     ".remote-sync.json",
     ".git/**"
