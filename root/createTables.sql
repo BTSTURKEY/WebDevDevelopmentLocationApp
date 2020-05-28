@@ -45,6 +45,7 @@ BL_Lat DECIMAL(8, 6) NOT NULL,
 BL_Long DECIMAL(9, 6) NOT NULL,
 BR_Lat DECIMAL(8, 6) NOT NULL,
 BR_Long DECIMAL(9, 6) NOT NULL,
+Device_Inside VARCHAR(10) NOT NULL,
 PRIMARY KEY (GeoFence_ID)
 );
 
@@ -53,5 +54,6 @@ Automation_ID int(10) AUTO_INCREMENT,
 Automation_Name VARCHAR(30) NOT NULL,
 Event VARCHAR(30) NOT NULL,
 Event_Condition VARCHAR(30) NOT NULL,
+Active VARCHAR(10) NOT NULL,
 PRIMARY KEY (Automation_ID)
 );

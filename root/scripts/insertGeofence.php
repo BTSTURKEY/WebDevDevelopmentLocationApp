@@ -27,8 +27,8 @@ if(mysqli_num_rows($checkResult) > 0){
 }
 else{
   $insertSql = "INSERT INTO geofence_table (TL_Lat, TL_Long, TR_Lat, TR_Long, BL_Lat,
-    BL_Long, BR_Lat, BR_Long) VALUES ('$tl_lat', '$tl_long','$tr_lat',
-      '$tr_long','$bl_lat','$bl_long','$br_lat','$br_long')";
+    BL_Long, BR_Lat, BR_Long, Device_Inside) VALUES ('$tl_lat', '$tl_long','$tr_lat',
+      '$tr_long','$bl_lat','$bl_long','$br_lat','$br_long', 'TRUE')";
     }
 
     if(mysqli_query($connection, $insertSql)){

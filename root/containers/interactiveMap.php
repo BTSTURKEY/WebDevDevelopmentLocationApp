@@ -173,7 +173,7 @@ map.on('click', function(e) {
         content: feature.get('time_stamp')
       });
       $(element).popover("show");
-      setTimeout(disposePopup, 1000);
+      setTimeout(disposePopup, 3000);
     }
     else {
       $(element).popover("dispose");
@@ -577,7 +577,9 @@ function drawGeofence(){
       bl_lat:BL[0],
       bl_long:BL[1]
     };
-    $.post('scripts/insertGeofence.php', data);
+    $.post('scripts/insertGeofence.php', data, function(response) {
+      console.log(response);
+    });
   });
 }
 
@@ -620,6 +622,6 @@ function geofenceDelete() {
 
 function geofenceEdit(){
   window.open('components/geofence.php','popup',
-  'width=700,height=400,left=1000'); return false;
+  'width=700,height=500,left=1000'); return false;
 }
 </script>

@@ -1,7 +1,9 @@
 <?php
-include_once("../scripts/dbConfig.php");
+include_once("dbConfig.php");
 
-if($_SERVER['REQUEST_METHOD']=='POST'){
+if($_SERVER['REQUEST_METHOD']!='POST'){
+  die(header("Location: https://turkltd.co.uk"));
+}
   $uuid = $_POST['UUID'];
   $latitude = $_POST['latitude'];
   $longitude = $_POST['longitude'];
@@ -16,5 +18,4 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     echo("SQL Query: " . $sql);
     echo("Insert failed: " . mysqli_error($connection));
   }
-}
 ?>
