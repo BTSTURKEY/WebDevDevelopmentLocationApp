@@ -3,7 +3,6 @@ session_start();
 if(!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] != true){
   die(header("Location: https://turkltd.co.uk"));
 }
-
 include_once("../scripts/dbConfig.php");
 
 

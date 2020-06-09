@@ -616,7 +616,7 @@ function geofenceDelete() {
     source:drawnSource
   });
 
-  $.get("scripts/removeGeofence.php");
+  $.get("scripts/deleteGeofence.php");
   return false;
 }
 

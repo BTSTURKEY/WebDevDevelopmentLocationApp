@@ -130,7 +130,7 @@ function deleteWarning(Automation_ID){
     Swal.fire({
       width: 400,
       backdrop: 'rgba(3, 23, 26, 0.68)',
-      html: '<h1> Are you sure?????</h1><br>'+
+      html: '<h1> Are you sure?</h1><br>'+
       '<p> Pressing yes will remove all records'+
       '<button class="btn btn-info ml-1" onclick="deleteAutomation('+Automation_ID+'); Swal.close();"> Yes delete all</button>'+
       '<button class="btn btn-danger ml-1" onclick="Swal.close();"> No keep it</button>',
