@@ -1,7 +1,4 @@
 <?php
-// if(!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] != true){
-//   die(header("Location: https://turkltd.co.uk"));
-// }
 include("dbConfig.php");
 
 $deviceUUID = array();
